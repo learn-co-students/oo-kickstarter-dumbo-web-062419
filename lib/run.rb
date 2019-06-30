@@ -5,6 +5,7 @@ require 'pry'
 
 backer1 = Backer.new("James")
 backer2 = Backer.new("Titan")
+backer3 = Backer.new("Mr. Krabs")
 
 project1 = Project.new("Area 51")
 project2 = Project.new("Project X")
@@ -14,5 +15,7 @@ project2 = Project.new("Project X")
 backer2.back_project(project1)
 backer1.back_project(project2)
 backer2.back_project(project2)
+
+project1.add_backer(backer3)
 
 binding.pry
